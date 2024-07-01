@@ -1,0 +1,150 @@
+$light-background-primary: rgba(211, 211, 211, 0.377);
+$light-grey-color: #afabab;
+$strong-grey-color: #4b3f3f;
+$primary-form-color: rgb(74, 74, 192);
+$secondary-form-color: #817d7d;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+.main-grid-2-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.right-content {
+  background-color: $light-background-primary;
+}
+.left-content,
+.right-content {
+  padding: 3rem 1rem 1rem 6rem;
+}
+.right-content {
+  padding-left: 4rem;
+  background-image: url("../logo.svg");
+}
+
+nav {
+  margin-left: 5rem;
+  color: $strong-grey-color;
+}
+li {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5rem;
+  transition: all 0.1s;
+  padding: 0.5rem 0.4rem;
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-form-color;
+    color: #fff;
+
+    border-radius: 2px;
+  }
+}
+
+li:first-child {
+  border-bottom: 0.15rem solid blue;
+}
+
+.form-description {
+  color: $primary-form-color;
+}
+.primary-form-heading {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.9rem;
+}
+
+.secondary-form-heading-line-2 {
+  display: block;
+  line-height: 2.7rem;
+}
+.form-greet {
+  line-height: 2.9rem;
+  color: $secondary-form-color;
+  margin-bottom: 3.5rem;
+}
+
+.email,
+.password {
+  padding: 1rem 0.5rem;
+  display: block;
+  width: 80%;
+  &:focus {
+    color: $primary-form-color;
+  }
+  margin-top: 0.5rem;
+
+  &:hover,
+  &:focus {
+    border: none;
+    cursor: pointer;
+    border-left: 0.3rem solid rgb(79, 26, 122);
+  }
+}
+
+.checkbox {
+  display: inline-block;
+}
+.form-desc {
+  width: 80%;
+  color: $strong-grey-color;
+
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+
+  & > .desc-remember-me {
+    display: inline-block;
+    & > p {
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+  }
+  & > a {
+    color: rgb(111, 111, 214);
+    text-decoration: none;
+  }
+}
+
+.form-btn-login,
+.form-btn-signup {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}
+
+.form-btn-login {
+  color: #fff;
+  background-color: rgb(79, 26, 122);
+  margin-right: 0.5rem;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.441);
+}
+
+.form-btn-signup {
+  color: rgb(79, 26, 122);
+  border: 0.1rem solid rgb(79, 26, 122);
+  margin-left: 0.5rem;
+}
+
+.social-media-share {
+  display: flex;
+  height: 100px;
+}
+
+@keyframes nav-animation {
+  0% {
+    background-color: #ffff;
+    color: $primary-form-color;
+  }
+
+  100% {
+    background-color: $primary-form-color;
+    color: #fff;
+  }
+}
