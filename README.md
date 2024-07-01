@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Final Result
 
-![alt text](https://github.com/barney29/react-login-page/blob/src/master/screenshot.jpg?raw=true)
+![alt text](https://github.com/barney29/react-login-page/blob/master/src/screenshot.jpg?raw=true)
